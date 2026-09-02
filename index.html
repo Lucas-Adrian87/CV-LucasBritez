@@ -1,41 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas Britez | Consultor en Inteligencia Artificial & Desarrollador Web</title>
-  <meta name="description" content="Portafolio profesional de Lucas Britez. Consultor en IA y Desarrollador Web Freelance." />
-  
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Britez - CV & Portafolio</title>
+    <meta name="description" content="Currículum vítae clásico y minimalista de Lucas Britez, Consultor en Inteligencia Artificial y Desarrollador Web Freelance." />
+    <meta property="og:title" content="Lucas Britez - CV & Portafolio" />
+    <meta property="og:description" content="Currículum vítae clásico y minimalista de Lucas Britez, Consultor en Inteligencia Artificial y Desarrollador Web Freelance." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Google Fonts: Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    }
-    /* Ocultar barra de scroll en modales pero permitir deslizamiento */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  </style>
-</head>
-<body class="bg-[#f8fafc] text-[#1e293b] antialiased min-h-screen py-8 px-4 sm:px-6 md:px-8">
-  <main class="max-w-3xl mx-auto" id="portfolio-app">
-    
-    <!-- Contenedor Principal (Hoja de Estilo Ejecutivo Minimalista) -->
-    <div class="bg-white border border-[#e2e8f0] rounded-xl p-6 sm:p-8 shadow-xs" id="cv-card">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cvdark: '#1e293b',
+              cvmuted: '#475569',
+              cvcard: '#f8fafc',
+              cvborder: '#e2e8f0',
+            }
+          }
+        }
+      }
+    </script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background-color: #ffffff;
+        color: #1e293b;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-[#1e293b] antialiased selection:bg-slate-200">
+    <main class="max-w-2xl mx-auto px-4 py-8 sm:py-10 text-sm leading-relaxed" id="cv-root">
       
       <!-- 1. ENCABEZADO (Header Ejecutivo) -->
       <header class="border-b border-[#e2e8f0] pb-5 mb-5" id="header-section">
@@ -65,132 +67,87 @@
           <span class="inline-flex items-center gap-1.5">
             <i class="fa-solid fa-location-dot text-slate-400"></i> Resistencia, Chaco
           </span>
+          <span class="text-slate-300">|</span>
           <span class="inline-flex items-center gap-1.5">
-            <i class="fa-solid fa-calendar-check text-slate-400"></i> 18 años (2007)
+            <i class="fa-solid fa-language text-slate-400"></i> Español (Nativo) - Portugués (Bilingüe)
           </span>
-          <a href="mailto:lucas07britez@gmail.com" class="inline-flex items-center gap-1.5 hover:text-slate-900 transition-colors">
-            <i class="fa-solid fa-envelope text-slate-400"></i> lucas07britez@gmail.com
-          </a>
         </div>
       </header>
 
-      <!-- 2. SOBRE MÍ / PERFIL PROFESIONAL -->
-      <section class="mb-6" id="about-section">
-        <h2 class="text-xs font-semibold uppercase tracking-wider text-[#64748b] mb-2" id="about-title">Perfil Profesional</h2>
-        <p class="text-xs sm:text-[13px] leading-relaxed text-[#334155]" id="about-description">
-          Desarrollador web y consultor en Inteligencia Artificial enfocado en crear soluciones digitales escalables, limpias y altamente eficientes. Especializado en diseño de interfaces modernas, automatizaciones y agentes inteligentes adaptados a las necesidades estratégicas de negocios y profesionales.
-        </p>
+      <!-- 2. RESUMEN PROFESIONAL -->
+      <section class="mb-6" id="summary-section">
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-[#64748b] mb-2" id="summary-title">Resumen Profesional</h2>
+        <div class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-3.5" id="summary-card">
+          <p class="text-[#334155] leading-normal" id="summary-text">
+            Especialista en desarrollo web comercial de alto rendimiento y consultoría para la integración estratégica de soluciones multimedia impulsadas por inteligencia artificial. Acompaño a empresas y profesionales en la automatización de procesos digitales e implementación de plataformas web modernas y escalables.
+          </p>
+        </div>
       </section>
 
-      <!-- 3. PROYECTOS DESTACADOS -->
+      <!-- 3. PROYECTOS REALES -->
       <section class="mb-6" id="projects-section">
-        <h2 class="text-xs font-semibold uppercase tracking-wider text-[#64748b] mb-2" id="projects-title">Proyectos Destacados</h2>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="projects-grid">
-          
-          <!-- Proyecto 1: Sistema de Gestión de Consultas Médicas -->
-          <div class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-3 hover:border-slate-300 transition-all flex flex-col justify-between" id="card-proj-1">
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-[#64748b] mb-2" id="projects-title">Proyectos Reales</h2>
+        <ul class="space-y-2.5" id="projects-list">
+          <li class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-slate-300 transition-colors" id="project-1">
             <div>
-              <div class="flex items-start justify-between gap-2 mb-1">
-                <h3 class="text-xs font-semibold text-[#1e293b]">Sistema de Gestión de Consultas Médicas</h3>
-                <span class="text-[10px] bg-slate-200/80 text-slate-700 px-1.5 py-0.5 rounded shrink-0 font-medium">Salud / SaaS</span>
-              </div>
-              <p class="text-[11px] leading-relaxed text-[#475569] mb-2">
-                Plataforma web con agenda médica, base de pacientes, control de turnos e historial clínico digital.
-              </p>
+              <h3 class="font-semibold text-[#1e293b] text-sm">Lubriluk</h3>
+              <p class="text-xs text-[#475569] mt-0.5">Plataforma web comercial y catálogo interactivo de productos.</p>
             </div>
-            <a href="https://sistema-de-gestion-de-consultas-medicas-429983196238.us-west1.run.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline mt-1" id="link-proj-1">
-              <span>Ver Proyecto</span>
-              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            <a href="https://lucas-britez.github.io/Lubriluk/" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline inline-flex items-center gap-1 shrink-0 self-start sm:self-auto" id="link-project-1">
+              [Ver Proyecto] <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
             </a>
-          </div>
+          </li>
 
-          <!-- Proyecto 2: TaskFlow -->
-          <div class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-3 hover:border-slate-300 transition-all flex flex-col justify-between" id="card-proj-2">
+          <li class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-slate-300 transition-colors" id="project-2">
             <div>
-              <div class="flex items-start justify-between gap-2 mb-1">
-                <h3 class="text-xs font-semibold text-[#1e293b]">TaskFlow</h3>
-                <span class="text-[10px] bg-slate-200/80 text-slate-700 px-1.5 py-0.5 rounded shrink-0 font-medium">Productividad</span>
-              </div>
-              <p class="text-[11px] leading-relaxed text-[#475569] mb-2">
-                Gestor colaborativo de tareas y proyectos con tableros Kanban, métricas y filtros dinámicos.
-              </p>
+              <h3 class="font-semibold text-[#1e293b] text-sm">MaxClean</h3>
+              <p class="text-xs text-[#475569] mt-0.5">Sitio web institucional y presencia digital para productos de limpieza.</p>
             </div>
-            <a href="https://lucas-britez.github.io/TaskFlow/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline mt-1" id="link-proj-2">
-              <span>Ver Proyecto</span>
-              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            <a href="https://lucas-adrian87.github.io/MaxClean/" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline inline-flex items-center gap-1 shrink-0 self-start sm:self-auto" id="link-project-2">
+              [Ver Proyecto] <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
             </a>
-          </div>
+          </li>
 
-          <!-- Proyecto 3: Nexa Dashboard -->
-          <div class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-3 hover:border-slate-300 transition-all flex flex-col justify-between" id="card-proj-3">
+          <li class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-slate-300 transition-colors" id="project-3">
             <div>
-              <div class="flex items-start justify-between gap-2 mb-1">
-                <h3 class="text-xs font-semibold text-[#1e293b]">Nexa Dashboard</h3>
-                <span class="text-[10px] bg-slate-200/80 text-slate-700 px-1.5 py-0.5 rounded shrink-0 font-medium">Analytics</span>
-              </div>
-              <p class="text-[11px] leading-relaxed text-[#475569] mb-2">
-                Panel administrativo para análisis de métricas, finanzas e inventario con reportes en tiempo real.
-              </p>
+              <h3 class="font-semibold text-[#1e293b] text-sm">Sebastián Refrigeración</h3>
+              <p class="text-xs text-[#475569] mt-0.5">Landing page comercial optimizada para captura de clientes.</p>
             </div>
-            <a href="https://lucas-britez.github.io/Nexa-Dashboard/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline mt-1" id="link-proj-3">
-              <span>Ver Proyecto</span>
-              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            <a href="https://lucas-britez.github.io/Sebastian-Refrigeracion/" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline inline-flex items-center gap-1 shrink-0 self-start sm:self-auto" id="link-project-3">
+              [Ver Proyecto] <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
             </a>
-          </div>
+          </li>
 
-          <!-- Proyecto 4: Aura Shop -->
-          <div class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-3 hover:border-slate-300 transition-all flex flex-col justify-between" id="card-proj-4">
+          <li class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-slate-300 transition-colors" id="project-4">
             <div>
-              <div class="flex items-start justify-between gap-2 mb-1">
-                <h3 class="text-xs font-semibold text-[#1e293b]">Aura Shop</h3>
-                <span class="text-[10px] bg-slate-200/80 text-slate-700 px-1.5 py-0.5 rounded shrink-0 font-medium">E-commerce</span>
-              </div>
-              <p class="text-[11px] leading-relaxed text-[#475569] mb-2">
-                Tienda en línea minimalista con carrito reactivo, catálogo interactivo y checkout simulado.
-              </p>
+              <h3 class="font-semibold text-[#1e293b] text-sm">FC Mobile Tracker</h3>
+              <p class="text-xs text-[#475569] mt-0.5">Dashboard de métricas, estadísticas deportivas y gestión en tiempo real.</p>
             </div>
-            <a href="https://lucas-britez.github.io/Aura-Shop/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline mt-1" id="link-proj-4">
-              <span>Ver Proyecto</span>
-              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            <a href="https://lucas-britez.github.io/Tabla-de-Goleadores/" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline inline-flex items-center gap-1 shrink-0 self-start sm:self-auto" id="link-project-4">
+              [Ver Proyecto] <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
             </a>
-          </div>
+          </li>
 
-          <!-- Proyecto 5: Lumina Landing -->
-          <div class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-3 hover:border-slate-300 transition-all flex flex-col justify-between" id="card-proj-5">
+          <li class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-slate-300 transition-colors" id="project-5">
             <div>
-              <div class="flex items-start justify-between gap-2 mb-1">
-                <h3 class="text-xs font-semibold text-[#1e293b]">Lumina Landing</h3>
-                <span class="text-[10px] bg-slate-200/80 text-slate-700 px-1.5 py-0.5 rounded shrink-0 font-medium">Marketing Web</span>
-              </div>
-              <p class="text-[11px] leading-relaxed text-[#475569] mb-2">
-                Página de aterrizaje orientada a conversión de servicios digitales y consultoría.
-              </p>
+              <h3 class="font-semibold text-[#1e293b] text-sm">Galería de Astronomía</h3>
+              <p class="text-xs text-[#475569] mt-0.5">Portafolio interactivo de astrofotografía y visualización espacial.</p>
             </div>
-            <a href="https://lucas-britez.github.io/Lumina-Landing-Page/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline mt-1" id="link-proj-5">
-              <span>Ver Proyecto</span>
-              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            <a href="https://lucas-britez.github.io/astro-GALLERY/" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline inline-flex items-center gap-1 shrink-0 self-start sm:self-auto" id="link-project-5">
+              [Ver Proyecto] <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
             </a>
-          </div>
+          </li>
 
-          <!-- Proyecto 6: Gemini Assistant -->
-          <div class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-3 hover:border-slate-300 transition-all flex flex-col justify-between" id="card-proj-6">
+          <li class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-slate-300 transition-colors" id="project-6">
             <div>
-              <div class="flex items-start justify-between gap-2 mb-1">
-                <h3 class="text-xs font-semibold text-[#1e293b]">Gemini Assistant</h3>
-                <span class="text-[10px] bg-slate-200/80 text-slate-700 px-1.5 py-0.5 rounded shrink-0 font-medium">IA Generativa</span>
-              </div>
-              <p class="text-[11px] leading-relaxed text-[#475569] mb-2">
-                Asistente inteligente con interfaz conversacional para resolución de consultas y automatización.
-              </p>
+              <h3 class="font-semibold text-[#1e293b] text-sm">Automatizador Massaniello</h3>
+              <p class="text-xs text-[#475569] mt-0.5">Aplicación web de gestión financiera y cálculo de probabilidades.</p>
             </div>
-            <a href="https://lucas-britez.github.io/Gemini-Assistant/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline mt-1" id="link-proj-6">
-              <span>Ver Proyecto</span>
-              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            <a href="https://massaniello-trader.ai.studio/" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline inline-flex items-center gap-1 shrink-0 self-start sm:self-auto" id="link-project-6">
+              [Ver Proyecto] <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
             </a>
-          </div>
-
-        </div>
+          </li>
+        </ul>
       </section>
 
       <!-- 4. FORMACIÓN & CERTIFICACIONES -->
@@ -257,22 +214,7 @@
         </div>
       </section>
 
-      <!-- 5. HABILIDADES TÉCNICAS -->
-      <section class="mb-6" id="skills-section">
-        <h2 class="text-xs font-semibold uppercase tracking-wider text-[#64748b] mb-2" id="skills-title">Habilidades Técnicas</h2>
-        <div class="flex flex-wrap gap-1.5" id="skills-tags">
-          <span class="text-xs px-2.5 py-1 bg-[#f1f5f9] border border-[#e2e8f0] rounded text-[#334155]">HTML5 & CSS3</span>
-          <span class="text-xs px-2.5 py-1 bg-[#f1f5f9] border border-[#e2e8f0] rounded text-[#334155]">JavaScript / TypeScript</span>
-          <span class="text-xs px-2.5 py-1 bg-[#f1f5f9] border border-[#e2e8f0] rounded text-[#334155]">Tailwind CSS</span>
-          <span class="text-xs px-2.5 py-1 bg-[#f1f5f9] border border-[#e2e8f0] rounded text-[#334155]">React / Next.js</span>
-          <span class="text-xs px-2.5 py-1 bg-[#f1f5f9] border border-[#e2e8f0] rounded text-[#334155]">APIs de Inteligencia Artificial (Gemini / OpenAI)</span>
-          <span class="text-xs px-2.5 py-1 bg-[#f1f5f9] border border-[#e2e8f0] rounded text-[#334155]">Automatización & Agentes de IA</span>
-          <span class="text-xs px-2.5 py-1 bg-[#f1f5f9] border border-[#e2e8f0] rounded text-[#334155]">Git / GitHub</span>
-          <span class="text-xs px-2.5 py-1 bg-[#f1f5f9] border border-[#e2e8f0] rounded text-[#334155]">Diseño UI/UX Minimalista</span>
-        </div>
-      </section>
-
-      <!-- 6. CONTACTO (Formulario + Links Directos) -->
+      <!-- 5. SECCIÓN DE CONTACTO -->
       <section class="border-t border-[#e2e8f0] pt-5" id="contact-section">
         <h2 class="text-xs font-semibold uppercase tracking-wider text-[#64748b] mb-2" id="contact-title">Contacto</h2>
         
@@ -283,12 +225,12 @@
           </div>
 
           <div>
-            <label for="contact-email" class="block text-xs font-medium text-[#475569] mb-1">Email o Teléfono</label>
-            <input type="text" id="contact-email" name="contact" placeholder="ejemplo@correo.com o WhatsApp" class="w-full text-xs px-3 py-2 bg-white border border-[#e2e8f0] rounded text-[#1e293b] placeholder:text-slate-400 focus:outline-none focus:border-slate-400 transition-colors" required />
+            <label for="contact-email" class="block text-xs font-medium text-[#475569] mb-1">Email / Teléfono</label>
+            <input type="text" id="contact-email" name="email_or_phone" placeholder="ejemplo@correo.com o +54 9..." class="w-full text-xs px-3 py-2 bg-white border border-[#e2e8f0] rounded text-[#1e293b] placeholder:text-slate-400 focus:outline-none focus:border-slate-400 transition-colors" required />
           </div>
 
           <div>
-            <label for="contact-message" class="block text-xs font-medium text-[#475569] mb-1">Mensaje / Consulta</label>
+            <label for="contact-message" class="block text-xs font-medium text-[#475569] mb-1">Mensaje</label>
             <textarea id="contact-message" name="message" rows="2" placeholder="Detalles de la consulta..." class="w-full text-xs px-3 py-2 bg-white border border-[#e2e8f0] rounded text-[#1e293b] placeholder:text-slate-400 focus:outline-none focus:border-slate-400 transition-colors resize-none" required></textarea>
           </div>
 
@@ -307,398 +249,466 @@
             <i class="fa-brands fa-whatsapp text-sm text-emerald-600"></i>
             <span>WhatsApp</span>
           </a>
-          <a href="mailto:lucas07britez@gmail.com" class="inline-flex items-center gap-1.5 hover:text-blue-600 transition-colors" id="link-email">
-            <i class="fa-solid fa-envelope text-sm text-blue-500"></i>
+          <span class="text-slate-300">|</span>
+          <a href="mailto:lucas07britez@gmail.com" class="inline-flex items-center gap-1.5 hover:text-blue-700 transition-colors" id="link-email">
+            <i class="fa-regular fa-envelope text-sm text-blue-600"></i>
             <span>lucas07britez@gmail.com</span>
           </a>
         </footer>
-
       </section>
-      
-    </div>
-  </main>
 
-  <!-- ========================================================================= -->
-  <!-- MODAL PRINCIPAL: LISTADO DE DIPLOMAS / CATEGORÍAS (z-50)                  -->
-  <!-- ========================================================================= -->
-  <div id="modal-container" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 opacity-0 pointer-events-none transition-opacity duration-200">
-    
-    <div class="bg-white border border-[#e2e8f0] rounded-xl w-full max-w-2xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden" id="modal-card">
-      <!-- Modal Header -->
-      <div class="flex items-center justify-between px-5 py-4 border-b border-[#e2e8f0] bg-[#f8fafc]">
-        <div>
-          <h3 id="modal-title" class="text-sm font-bold text-[#1e293b]">Certificaciones</h3>
-          <p id="modal-subtitle" class="text-xs text-[#64748b]">Credenciales y diplomas oficiales</p>
+    </main>
+
+    <!-- MODAL / MINI GALERÍA POPUP (Capa intermedia: z-50) -->
+    <div id="diploma-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-[2px] hidden items-center justify-center p-3 sm:p-4 opacity-0 transition-opacity duration-200" onclick="handleBackdropClick(event)">
+      <div class="bg-white border border-[#e2e8f0] rounded-xl shadow-xl w-full max-w-2xl overflow-hidden flex flex-col max-h-[90vh] scale-95 transition-transform duration-200" id="modal-card">
+        
+        <!-- Header del Modal -->
+        <div class="px-4 py-3 border-b border-[#e2e8f0] flex items-center justify-between bg-[#f8fafc]">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-award text-slate-500 text-sm"></i>
+            <h3 id="modal-institution-title" class="font-bold text-sm text-[#1e293b] truncate">Institución</h3>
+          </div>
+          <button type="button" onclick="closeModal()" class="text-slate-400 hover:text-slate-700 p-1 rounded-md transition-colors cursor-pointer text-base leading-none" title="Cerrar (Esc)" aria-label="Cerrar modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
-        <button onclick="closeModal()" class="text-[#64748b] hover:text-[#1e293b] p-1.5 rounded-lg hover:bg-slate-200/60 transition-colors cursor-pointer" aria-label="Cerrar modal">
-          <i class="fa-solid fa-xmark text-base"></i>
-        </button>
-      </div>
 
-      <!-- Modal Body (Desplazable) -->
-      <div id="modal-body" class="p-5 overflow-y-auto space-y-5 text-xs text-[#334155] no-scrollbar">
-        <!-- Contenido inyectado dinámicamente -->
-      </div>
-
-      <!-- Modal Footer -->
-      <div class="px-5 py-3 border-t border-[#e2e8f0] bg-[#f8fafc] flex justify-end">
-        <button onclick="closeModal()" class="px-3.5 py-1.5 text-xs font-semibold bg-[#1e293b] text-white hover:bg-slate-800 rounded-lg transition-colors cursor-pointer">
-          Cerrar
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ========================================================================= -->
-  <!-- REGLA UNIVERSAL: VISOR / LIGHTBOX FULLSCREEN A PANTALLA COMPLETA (z-[9999]) -->
-  <!-- ========================================================================= -->
-  <div id="lightbox-modal" class="fixed inset-0 z-[9999] bg-black/90 backdrop-blur-md flex items-center justify-center p-2 sm:p-4 opacity-0 pointer-events-none transition-opacity duration-200 select-none">
-    
-    <!-- Botón Cerrar Lightbox -->
-    <button onclick="closeLightbox()" class="absolute top-3 right-3 sm:top-5 sm:right-5 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 p-2.5 rounded-full transition-all cursor-pointer z-10" title="Cerrar vista previa">
-      <i class="fa-solid fa-xmark text-lg"></i>
-    </button>
-
-    <!-- Contenedor de la Imagen con zoom interactivo -->
-    <div class="relative max-w-4xl max-h-[92vh] flex flex-col items-center justify-center" onclick="event.stopPropagation()">
-      <img id="lightbox-img" src="" alt="Diploma Certificado" class="max-h-[82vh] max-w-[92vw] sm:max-w-[85vw] object-contain rounded shadow-2xl border border-white/10 transition-transform duration-200" />
-      <p id="lightbox-caption" class="text-xs sm:text-sm text-slate-200 font-medium mt-3 text-center px-4 line-clamp-2"></p>
-    </div>
-  </div>
-
-  <!-- ========================================================================= -->
-  <!-- DATOS & LÓGICA JAVASCRIPT                                                 -->
-  <!-- ========================================================================= -->
-  <script>
-    // BASE DE DATOS DE CERTIFICACIONES
-    const CERT_DATA = {
-      bigschool: {
-        title: "Big School (España)",
-        subtitle: "Certificaciones Profesionales en Inteligencia Artificial",
-        isCategorized: true,
-        categories: [
-          {
-            name: "Máster en Inteligencia Artificial",
-            items: [
-              {
-                title: "Desarrollo de Aplicaciones con IA",
-                url: "https://i.ibb.co/bgsr8P1L/Desarrollo-de-Aplicaciones-con-IA.png"
-              },
-              {
-                title: "Agentes de Inteligencia Artificial",
-                url: "https://i.ibb.co/VWVw83kY/Agentes-de-Inteligencia-Artificial.png"
-              },
-              {
-                title: "Automatizaciones con Inteligencia Artificial",
-                url: "https://i.ibb.co/3ykdD3K1/Automatizaciones-con-Inteligencia-Artificial.png"
-              },
-              {
-                title: "Clonación de Voz y Creación de Avatares",
-                url: "https://i.ibb.co/pvP0B7b8/Clonaci-n-de-Voz-y-Creaci-n-de-Avatares.png"
-              },
-              {
-                title: "Creación de Contenido con IA",
-                url: "https://i.ibb.co/Y4w0D9dJ/Creaci-n-de-Contenido-con-IA.png"
-              },
-              {
-                title: "Creación de Imágenes con Inteligencia Artificial",
-                url: "https://i.ibb.co/4n50n5zW/Creaci-n-de-Im-genes-con-Inteligencia-Artificial.png"
-              },
-              {
-                title: "Creación de Video con Inteligencia Artificial",
-                url: "https://i.ibb.co/G41K6t56/Creaci-n-de-Video-con-Inteligencia-Artificial.png"
-              },
-              {
-                title: "Fundamentos de la Inteligencia Artificial",
-                url: "https://i.ibb.co/gbtqVz00/Fundamentos-de-la-Inteligencia-Artificial.png"
-              },
-              {
-                title: "Inteligencia Artificial para Finanzas y Ventas",
-                url: "https://i.ibb.co/5xbkK92f/Inteligencia-Artificial-para-Finanzas-y-Ventas.png"
-              },
-              {
-                title: "Inteligencia Artificial para Programación",
-                url: "https://i.ibb.co/8L4481mS/Inteligencia-Artificial-para-Programaci-n.png"
-              },
-              {
-                title: "Productividad con Inteligencia Artificial",
-                url: "https://i.ibb.co/M5b6XJ15/Productividad-con-Inteligencia-Artificial.png"
-              },
-              {
-                title: "Prompt Engineering con Inteligencia Artificial",
-                url: "https://i.ibb.co/9kx31mZ8/Prompt-Engineering-con-Inteligencia-Artificial.png"
-              }
-            ]
-          },
-          {
-            name: "Lanza tu Negocio con IA",
-            items: [
-              {
-                title: "Lanza tu Negocio con IA - Certificado de Especialización",
-                url: "https://i.ibb.co/W4h5V0Zk/Lanza-tu-Negocio-con-IA.png"
-              }
-            ]
-          }
-        ]
-      },
-
-      universo: {
-        title: "Universo Aqui (Brasil)",
-        subtitle: "Formación Especializada en Inteligencia Artificial",
-        isCategorized: false,
-        items: [
-          {
-            title: "Agente IA no WhatsApp",
-            url: "https://i.ibb.co/84f9Mh1P/Agente-IA-no-Whats-App.png"
-          },
-          {
-            title: "Agentes de Inteligência Artificial",
-            url: "https://i.ibb.co/8n4M3sJq/Agentes-de-Intelig-ncia-Artificial.png"
-          },
-          {
-            title: "Automação com IA no Make",
-            url: "https://i.ibb.co/hJshJqfN/Automa-o-com-IA-no-Make.png"
-          },
-          {
-            title: "Automação com IA no N8N",
-            url: "https://i.ibb.co/wZspK682/Automa-o-com-IA-no-N8-N.png"
-          },
-          {
-            title: "Criação de Apps com IA",
-            url: "https://i.ibb.co/pBTtMkhX/Cria-o-de-Apps-com-IA.png"
-          },
-          {
-            title: "Criação de Imagens e Vídeos com IA",
-            url: "https://i.ibb.co/G4n4YqK5/Cria-o-de-Imagens-e-V-deos-com-IA.png"
-          },
-          {
-            title: "Criação de Sites com IA",
-            url: "https://i.ibb.co/M5Y3vC38/Cria-o-de-Sites-com-IA.png"
-          },
-          {
-            title: "DeepSeek do Zero ao Avançado",
-            url: "https://i.ibb.co/5x97WbH1/Deep-Seek-do-Zero-ao-Avan-ado.png"
-          },
-          {
-            title: "Engenharia de Prompt",
-            url: "https://i.ibb.co/NdTz6mQW/Engenharia-de-Prompt.png"
-          },
-          {
-            title: "Inteligência Artificial para Negócios",
-            url: "https://i.ibb.co/LXZ2HqKx/Intelig-ncia-Artificial-para-Neg-cios.png"
-          },
-          {
-            title: "Inteligência Artificial para Produtividade",
-            url: "https://i.ibb.co/jP19zR7S/Intelig-ncia-Artificial-para-Produtividade.png"
-          },
-          {
-            title: "Mestres da IA",
-            url: "https://i.ibb.co/sd9XhS2k/Mestres-da-IA.png"
-          },
-          {
-            title: "Monetização com IA",
-            url: "https://i.ibb.co/wNNk9B4x/Monetiza-o-com-IA.png"
-          }
-        ]
-      },
-
-      nasa: {
-        title: "NASA (EE.UU.)",
-        subtitle: "Certificación Oficial de Participación",
-        isCategorized: false,
-        items: [
-          {
-            title: "Noche Internacional de Observación de la Luna",
-            url: "https://i.ibb.co/ks9kKRrV/Lucas-Adri-n-Britez.png"
-          }
-        ]
-      }
-    };
-
-    // FUNCIÓN PARA RENDERIZAR UNA TARJETA DE DIPLOMA TÁCTIL E INTERACTIVA
-    function renderDiplomaCard(item) {
-      return `
-        <div 
-          onclick="openLightbox('${item.url}', '${item.title.replace(/'/g, "\\'")}')" 
-          class="group bg-[#f8fafc] border border-[#e2e8f0] hover:border-blue-400/80 rounded-lg p-2.5 flex items-center gap-3 cursor-pointer transition-all hover:shadow-xs active:scale-[0.99]"
-          title="Toca para ampliar el diploma oficial"
-        >
-          <div class="relative w-14 h-10 bg-slate-200 rounded overflow-hidden shrink-0 border border-slate-300/80 group-hover:opacity-90">
-            <img src="${item.url}" alt="${item.title}" class="w-full h-full object-cover" loading="lazy" />
-            <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors"></div>
-          </div>
-          <div class="flex-1 min-w-0">
-            <h4 class="text-xs font-semibold text-[#1e293b] group-hover:text-blue-600 transition-colors leading-snug line-clamp-1">${item.title}</h4>
-            <span class="text-[11px] text-blue-600 font-medium inline-flex items-center gap-1 mt-0.5">
-              <i class="fa-solid fa-expand text-[9px]"></i> Toca para ampliar
-            </span>
-          </div>
+        <!-- Contenedor dinámico del cuerpo del modal -->
+        <div id="modal-content-area" class="p-4 overflow-y-auto space-y-4 max-h-[calc(90vh-100px)]">
+          <!-- Se inyecta dinámicamente según la institución -->
         </div>
-      `;
-    }
 
-    // ABRIR MODAL GENERAL
-    function openModal(key) {
-      const data = CERT_DATA[key];
-      if (!data) return;
+        <!-- Footer del Modal -->
+        <div class="px-4 py-2.5 border-t border-[#e2e8f0] bg-[#f8fafc] flex justify-between items-center text-xs">
+          <span class="text-[#64748b] text-[11px]">Toca cualquier certificado para ampliarlo</span>
+          <button type="button" onclick="closeModal()" class="px-3 py-1 bg-white border border-slate-200 rounded text-slate-700 hover:bg-slate-50 font-medium transition-colors cursor-pointer">
+            Cerrar
+          </button>
+        </div>
 
-      const modalContainer = document.getElementById('modal-container');
-      const title = document.getElementById('modal-title');
-      const subtitle = document.getElementById('modal-subtitle');
-      const body = document.getElementById('modal-body');
+      </div>
+    </div>
 
-      title.innerText = data.title;
-      subtitle.innerText = data.subtitle;
+    <!-- LIGHTBOX / VISOR DE IMAGEN EN PANTALLA COMPLETA (Capa superior absoluta: z-[9999]) -->
+    <div id="lightbox-modal" class="fixed inset-0 z-[9999] bg-slate-950/90 backdrop-blur-sm hidden items-center justify-center p-3 sm:p-6 opacity-0 transition-opacity duration-200" onclick="handleLightboxBackdropClick(event)">
+      <div class="relative max-w-4xl w-full max-h-[96vh] flex flex-col items-center justify-center">
+        <!-- Barra superior del Lightbox limpia -->
+        <div class="w-full flex items-center justify-between text-white/90 mb-2 px-1">
+          <span id="lightbox-title" class="text-xs sm:text-sm font-medium truncate max-w-[85%] text-slate-200">Certificado</span>
+          <button type="button" onclick="closeLightbox()" class="text-white/70 hover:text-white p-1 text-lg leading-none cursor-pointer transition-colors" title="Cerrar visor (Esc)">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        
+        <!-- Imagen ampliada limpia en máxima resolución -->
+        <div class="bg-black/50 rounded-lg p-1 sm:p-2 border border-white/10 max-h-[88vh] flex items-center justify-center overflow-hidden w-full">
+          <img id="lightbox-img" src="" alt="Diploma ampliado" class="max-h-[82vh] w-auto max-w-full object-contain rounded select-none shadow-2xl" />
+        </div>
+      </div>
+    </div>
 
-      let html = '';
-
-      if (data.isCategorized) {
-        data.categories.forEach(cat => {
-          html += `
-            <div class="space-y-2">
-              <div class="flex items-center gap-2 border-b border-slate-200 pb-1">
-                <span class="text-xs font-bold uppercase tracking-wider text-slate-700">${cat.name}</span>
-                <span class="text-[10px] bg-slate-200/80 text-slate-700 px-1.5 py-0.2 rounded-full font-semibold">${cat.items.length}</span>
-              </div>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                ${cat.items.map(item => renderDiplomaCard(item)).join('')}
-              </div>
-            </div>
-          `;
-        });
-      } else {
-        html += `
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            ${data.items.map(item => renderDiplomaCard(item)).join('')}
-          </div>
-        `;
-      }
-
-      body.innerHTML = html;
-
-      // Mostrar modal
-      modalContainer.classList.remove('opacity-0', 'pointer-events-none');
-      document.body.style.overflow = 'hidden';
-    }
-
-    // CERRAR MODAL GENERAL
-    function closeModal() {
-      const modalContainer = document.getElementById('modal-container');
-      modalContainer.classList.add('opacity-0', 'pointer-events-none');
-      
-      // Restaurar scroll si no hay lightbox abierto
-      const lightbox = document.getElementById('lightbox-modal');
-      if (lightbox.classList.contains('opacity-0')) {
-        document.body.style.overflow = '';
-      }
-    }
-
-    // ABRIR VISOR LIGHTBOX FULLSCREEN (z-[9999])
-    function openLightbox(imageUrl, captionText) {
-      const lightbox = document.getElementById('lightbox-modal');
-      const img = document.getElementById('lightbox-img');
-      const caption = document.getElementById('lightbox-caption');
-
-      img.src = imageUrl;
-      caption.innerText = captionText;
-
-      lightbox.classList.remove('opacity-0', 'pointer-events-none');
-      document.body.style.overflow = 'hidden';
-    }
-
-    // CERRAR VISOR LIGHTBOX
-    function closeLightbox() {
-      const lightbox = document.getElementById('lightbox-modal');
-      lightbox.classList.add('opacity-0', 'pointer-events-none');
-
-      // Si el modal principal sigue abierto, mantener overflow oculto
-      const modalContainer = document.getElementById('modal-container');
-      if (modalContainer.classList.contains('opacity-0')) {
-        document.body.style.overflow = '';
-      }
-    }
-
-    // Envío de formulario en segundo plano (sin recargar la web)
-    async function handleContactSubmit(event) {
-      event.preventDefault();
-      const form = document.getElementById('contact-form');
-      const btn = document.getElementById('btn-submit');
-      const btnText = document.getElementById('btn-submit-text');
-      const btnIcon = document.getElementById('btn-submit-icon');
-      const feedback = document.getElementById('form-feedback');
-
-      const name = document.getElementById('contact-name').value.trim();
-      const contactInfo = document.getElementById('contact-email').value.trim();
-      const message = document.getElementById('contact-message').value.trim();
-
-      if (!name || !contactInfo || !message) return;
-
-      // Estado de carga
-      btn.disabled = true;
-      btn.classList.add('opacity-75', 'cursor-not-allowed');
-      btnText.innerText = 'Enviando...';
-      btnIcon.className = 'fa-solid fa-spinner fa-spin text-xs';
-      feedback.className = 'hidden';
-
-      try {
-        const response = await fetch('https://formsubmit.co/ajax/lucas07britez@gmail.com', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-            _subject: `Nueva Consulta Web de ${name}`,
-            Nombre: name,
-            'Email o Telefono': contactInfo,
-            Mensaje: message,
-            _template: 'table'
-          })
-        });
-
-        if (response.ok) {
-          feedback.className = 'block bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs rounded-lg p-3';
-          feedback.innerHTML = '<div class="flex items-center gap-2 font-medium"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i><span>¡Consulta enviada con éxito!</span></div><p class="text-[11px] text-emerald-700 mt-1">Gracias por comunicarte. Te responderé a la brevedad.</p>';
-          form.reset();
-        } else {
-          throw new Error('Error en el servidor');
+    <!-- Script para gestión de la Galería y Categorías -->
+    <script>
+      // Estructura de datos completa
+      const diplomasData = {
+        bigschool: {
+          title: "Big School (España)",
+          isCategorized: true,
+          categories: [
+            {
+              name: "Consultor de IA",
+              items: [
+                {
+                  title: "Certificado Consultor de IA - Módulo 1",
+                  url: "https://i.ibb.co/fYBgLnXB/Screenshot-20250906-212744-One-Drive-1.jpg"
+                },
+                {
+                  title: "Certificado Consultor de IA - Módulo 2",
+                  url: "https://i.ibb.co/6RQmqV2h/Screenshot-20260204-064046-One-Drive-1.jpg"
+                },
+                {
+                  title: "Certificado Consultor de IA - Módulo 3",
+                  url: "https://i.ibb.co/bjF3vWwG/Screenshot-20260901-213230-One-Drive-1.jpg"
+                },
+                {
+                  isPending: true,
+                  title: "Certificado Consultor de IA - Avanzado",
+                  statusText: "Actualmente en proceso"
+                }
+              ]
+            },
+            {
+              name: "Marketing Digital",
+              items: [
+                {
+                  title: "Certificado Marketing Digital - Especialización",
+                  url: "https://i.ibb.co/ZpXpPdbY/Screenshot-20251020-205322-One-Drive-1.jpg"
+                },
+                {
+                  title: "Certificado Estrategias de Crecimiento & Marketing",
+                  url: "https://i.ibb.co/pBsL6kRZ/Screenshot-20260410-204256-One-Drive-1.jpg"
+                }
+              ]
+            },
+            {
+              name: "Data Science",
+              items: [
+                {
+                  title: "Certificado Data Science - Análisis de Datos",
+                  url: "https://i.ibb.co/9mBGqVMm/Screenshot-20251107-114959-One-Drive-1.jpg"
+                },
+                {
+                  title: "Certificado Data Science - Modelado Estadístico",
+                  url: "https://i.ibb.co/5W7HPYs9/Screenshot-20260504-115435-One-Drive-1.jpg"
+                }
+              ]
+            },
+            {
+              name: "Programación y Desarrollo",
+              items: [
+                {
+                  title: "Certificado Programación y Desarrollo Web",
+                  url: "https://i.ibb.co/FbBnyS7N/Screenshot-20260313-225123-One-Drive-1.jpg"
+                }
+              ]
+            },
+            {
+              name: "Ciberseguridad y Hacking Ético",
+              items: [
+                {
+                  title: "Certificado Ciberseguridad y Hacking Ético",
+                  url: "https://i.ibb.co/FLTRBWsR/Screenshot-20260410-204122-One-Drive-1.jpg"
+                }
+              ]
+            },
+            {
+              name: "SEO",
+              items: [
+                {
+                  title: "Certificado Posicionamiento SEO & Optimización Web",
+                  url: "https://i.ibb.co/9mv09HGP/Screenshot-20260501-135423-One-Drive-1.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        universo: {
+          title: "Universo Aqui (Brasil)",
+          isCategorized: true,
+          categories: [
+            {
+              name: "Agujeros Negros",
+              items: [
+                {
+                  title: "Certificado Agujeros Negros",
+                  url: "https://i.ibb.co/Qjq7Gmj6/Screenshot-20260223-220133-One-Drive-1.jpg"
+                }
+              ]
+            },
+            {
+              name: "Teoría de Cuerdas",
+              items: [
+                {
+                  title: "Certificado Teoría de Cuerdas",
+                  url: "https://i.ibb.co/fzDyVvk6/Screenshot-20260410-203921-One-Drive-1.jpg"
+                }
+              ]
+            },
+            {
+              name: "Teoría de la Relatividad General de Einstein",
+              items: [
+                {
+                  title: "Certificado Teoría de la Relatividad General de Einstein",
+                  url: "https://i.ibb.co/fzTpBBG4/Screenshot-20260901-213214-One-Drive-1.jpg"
+                }
+              ]
+            },
+            {
+              name: "Materia y Energía Oscura",
+              items: [
+                {
+                  title: "Certificado Materia y Energía Oscura",
+                  url: "https://i.ibb.co/cSHvk3FD/Screenshot-20260901-213153-One-Drive-1.jpg"
+                }
+              ]
+            },
+            {
+              name: "Telescopio James Webb y el Origen del Universo",
+              items: [
+                {
+                  title: "Certificado Telescopio James Webb y el Origen del Universo",
+                  url: "https://i.ibb.co/Xkpm1jh5/Screenshot-20260823-120951-Drive-1-1.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        nasa: {
+          title: "NASA (EE.UU.)",
+          isCategorized: false,
+          items: [
+            {
+              title: "Noche Internacional de Observación de la Luna",
+              url: "https://i.ibb.co/ks9kKRrV/Lucas-Adri-n-Britez.png"
+            }
+          ]
+        },
+        formarte: {
+          title: "Formarte / Gob. del Chaco",
+          isCategorized: false,
+          items: [
+            {
+              title: "Diplomatura en Desarrollo y Habilidades Digitales",
+              url: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+              title: "Certificado de Innovación y Transformación Tecnológica",
+              url: "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1000&q=80"
+            }
+          ]
+        },
+        utn: {
+          title: "UTN Reconquista",
+          isCategorized: false,
+          items: [
+            {
+              title: "Certificación Universitaria en Programación y Estructuras Web",
+              url: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+              title: "Acreditación Académica en Soluciones Informáticas",
+              url: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=80"
+            }
+          ]
         }
-      } catch (error) {
-        feedback.className = 'block bg-amber-50 border border-amber-200 text-amber-900 text-xs rounded-lg p-3';
-        feedback.innerHTML = `<div class="flex items-center gap-2 font-medium"><i class="fa-solid fa-circle-info text-amber-600 text-sm"></i><span>Mensaje procesado</span></div><p class="text-[11px] text-amber-800 mt-1">Si necesitas una respuesta inmediata, también puedes escribirme directamente a <a href="mailto:lucas07britez@gmail.com" class="underline font-medium text-amber-900">lucas07britez@gmail.com</a> o por WhatsApp arriba.</p>`;
-      } finally {
-        btn.disabled = false;
-        btn.classList.remove('opacity-75', 'cursor-not-allowed');
-        btnText.innerText = 'Enviar Consulta';
-        btnIcon.className = 'fa-solid fa-paper-plane text-xs';
-      }
-    }
+      };
 
-    // Eventos de teclado (Escape)
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        const lightbox = document.getElementById('lightbox-modal');
-        if (!lightbox.classList.contains('opacity-0')) {
-          closeLightbox();
+      function openModal(key) {
+        const data = diplomasData[key];
+        if (!data) return;
+
+        document.getElementById('modal-institution-title').innerText = data.title;
+        const contentArea = document.getElementById('modal-content-area');
+        contentArea.innerHTML = '';
+
+        if (data.isCategorized) {
+          // Render de Subcategorías estructuradas (Big School)
+          data.categories.forEach((cat, catIdx) => {
+            const catSection = document.createElement('div');
+            catSection.className = 'border-b border-[#e2e8f0] pb-3.5 last:border-0 last:pb-0';
+            
+            let itemsHtml = '';
+            cat.items.forEach((item, itemIdx) => {
+              if (item.isPending) {
+                // Tarjeta elegante de estado en proceso
+                itemsHtml += `
+                  <div class="bg-[#f8fafc] border border-dashed border-slate-300 rounded-lg p-3 flex flex-col justify-between items-start min-h-[140px]">
+                    <div>
+                      <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-medium bg-amber-50 text-amber-700 border border-amber-200 mb-2">
+                        <i class="fa-solid fa-clock-rotate-left text-[10px]"></i> ${item.statusText}
+                      </span>
+                      <h4 class="text-xs font-semibold text-[#1e293b] leading-snug">${item.title}</h4>
+                    </div>
+                    <p class="text-[11px] text-[#64748b] mt-2">Próximamente disponible</p>
+                  </div>
+                `;
+              } else {
+                // Tarjeta de Certificado con imagen interactiva directa
+                itemsHtml += `
+                  <div class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-2.5 flex flex-col justify-between gap-2 hover:border-slate-300 transition-all group">
+                    <div class="relative bg-white border border-[#e2e8f0] rounded overflow-hidden aspect-[4/3] flex items-center justify-center cursor-pointer shadow-xs" onclick="openLightbox('${item.url}', '${item.title.replace(/'/g, "\\'")}')">
+                      <img src="${item.url}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200" loading="lazy" />
+                      <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-medium gap-1.5 backdrop-blur-[1px]">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i> Ampliar
+                      </div>
+                    </div>
+                    <div>
+                      <h4 class="text-xs font-medium text-[#1e293b] leading-snug line-clamp-2" title="${item.title}">${item.title}</h4>
+                    </div>
+                  </div>
+                `;
+              }
+            });
+
+            catSection.innerHTML = `
+              <div class="flex items-center gap-2 mb-2.5">
+                <span class="w-1.5 h-3.5 bg-slate-700 rounded-full"></span>
+                <h3 class="text-xs font-bold uppercase tracking-wider text-[#334155]">${cat.name}</h3>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
+                ${itemsHtml}
+              </div>
+            `;
+            contentArea.appendChild(catSection);
+          });
         } else {
+          // Render para galerías estándar
+          const listDiv = document.createElement('div');
+          listDiv.className = 'grid grid-cols-1 sm:grid-cols-2 gap-3';
+          
+          let itemsHtml = '';
+          data.items.forEach((item) => {
+            itemsHtml += `
+              <div class="bg-[#f8fafc] border border-[#e2e8f0] rounded-lg p-2.5 flex flex-col justify-between gap-2 hover:border-slate-300 transition-all group">
+                <div class="relative bg-white border border-[#e2e8f0] rounded overflow-hidden aspect-[4/3] flex items-center justify-center cursor-pointer shadow-xs" onclick="openLightbox('${item.url}', '${item.title.replace(/'/g, "\\'")}')">
+                  <img src="${item.url}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200" loading="lazy" />
+                  <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-medium gap-1.5 backdrop-blur-[1px]">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i> Ampliar
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xs font-medium text-[#1e293b] leading-snug line-clamp-2" title="${item.title}">${item.title}</h4>
+                </div>
+              </div>
+            `;
+          });
+          listDiv.innerHTML = itemsHtml;
+          contentArea.appendChild(listDiv);
+        }
+
+        const modal = document.getElementById('diploma-modal');
+        const card = document.getElementById('modal-card');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        
+        setTimeout(() => {
+          modal.classList.remove('opacity-0');
+          card.classList.remove('scale-95');
+        }, 10);
+
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        const modal = document.getElementById('diploma-modal');
+        const card = document.getElementById('modal-card');
+        modal.classList.add('opacity-0');
+        card.classList.add('scale-95');
+
+        setTimeout(() => {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+          if (document.getElementById('lightbox-modal').classList.contains('hidden')) {
+            document.body.style.overflow = '';
+          }
+        }, 200);
+      }
+
+      function handleBackdropClick(event) {
+        if (event.target.id === 'diploma-modal') {
           closeModal();
         }
       }
-    });
 
-    // Cerrar al hacer clic en el fondo del modal principal
-    document.getElementById('modal-container').addEventListener('click', (e) => {
-      if (e.target.id === 'modal-container') {
-        closeModal();
-      }
-    });
+      // Funciones de Lightbox / Vista Ampliada
+      function openLightbox(imageUrl, title) {
+        const lb = document.getElementById('lightbox-modal');
+        const img = document.getElementById('lightbox-img');
+        const titleEl = document.getElementById('lightbox-title');
 
-    // Cerrar al hacer clic en el fondo del lightbox
-    document.getElementById('lightbox-modal').addEventListener('click', (e) => {
-      if (e.target.id === 'lightbox-modal') {
-        closeLightbox();
+        img.src = imageUrl;
+        img.alt = title;
+        titleEl.innerText = title;
+
+        lb.classList.remove('hidden');
+        lb.classList.add('flex');
+
+        setTimeout(() => {
+          lb.classList.remove('opacity-0');
+        }, 10);
       }
-    });
-  </script>
-</body>
+
+      function closeLightbox() {
+        const lb = document.getElementById('lightbox-modal');
+        lb.classList.add('opacity-0');
+
+        setTimeout(() => {
+          lb.classList.add('hidden');
+          lb.classList.remove('flex');
+          if (document.getElementById('diploma-modal').classList.contains('hidden')) {
+            document.body.style.overflow = '';
+          }
+        }, 200);
+      }
+
+      function handleLightboxBackdropClick(event) {
+        if (event.target.id === 'lightbox-modal') {
+          closeLightbox();
+        }
+      }
+
+      // Envío de formulario en segundo plano (sin recargar la web)
+      async function handleContactSubmit(event) {
+        event.preventDefault();
+        const form = document.getElementById('contact-form');
+        const btn = document.getElementById('btn-submit');
+        const btnText = document.getElementById('btn-submit-text');
+        const btnIcon = document.getElementById('btn-submit-icon');
+        const feedback = document.getElementById('form-feedback');
+
+        const name = document.getElementById('contact-name').value.trim();
+        const contactInfo = document.getElementById('contact-email').value.trim();
+        const message = document.getElementById('contact-message').value.trim();
+
+        if (!name || !contactInfo || !message) return;
+
+        // Estado de carga
+        btn.disabled = true;
+        btn.classList.add('opacity-75', 'cursor-not-allowed');
+        btnText.innerText = 'Enviando...';
+        btnIcon.className = 'fa-solid fa-spinner fa-spin text-xs';
+        feedback.className = 'hidden';
+
+        try {
+          const response = await fetch('https://formsubmit.co/ajax/lucas07britez@gmail.com', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+              _subject: `Nueva Consulta Web de ${name}`,
+              Nombre: name,
+              'Email o Telefono': contactInfo,
+              Mensaje: message,
+              _template: 'table'
+            })
+          });
+
+          if (response.ok) {
+            feedback.className = 'block bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs rounded-lg p-3';
+            feedback.innerHTML = '<div class="flex items-center gap-2 font-medium"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i><span>¡Consulta enviada con éxito!</span></div><p class="text-[11px] text-emerald-700 mt-1">Gracias por comunicarte. Te responderé a la brevedad.</p>';
+            form.reset();
+          } else {
+            throw new Error('Error en el servidor');
+          }
+        } catch (error) {
+          // En caso de fallo o bloqueo de red, proporcionamos fallback amigable
+          feedback.className = 'block bg-amber-50 border border-amber-200 text-amber-900 text-xs rounded-lg p-3';
+          feedback.innerHTML = `<div class="flex items-center gap-2 font-medium"><i class="fa-solid fa-circle-info text-amber-600 text-sm"></i><span>Mensaje procesado</span></div><p class="text-[11px] text-amber-800 mt-1">Si necesitas una respuesta inmediata, también puedes escribirme directamente a <a href="mailto:lucas07britez@gmail.com" class="underline font-medium text-amber-900">lucas07britez@gmail.com</a> o por WhatsApp arriba.</p>`;
+        } finally {
+          btn.disabled = false;
+          btn.classList.remove('opacity-75', 'cursor-not-allowed');
+          btnText.innerText = 'Enviar Consulta';
+          btnIcon.className = 'fa-solid fa-paper-plane text-xs';
+        }
+      }
+
+      // Eventos de teclado (Escape)
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          const lb = document.getElementById('lightbox-modal');
+          if (lb && !lb.classList.contains('hidden')) {
+            closeLightbox();
+            return;
+          }
+          const modal = document.getElementById('diploma-modal');
+          if (modal && !modal.classList.contains('hidden')) {
+            closeModal();
+          }
+        }
+      });
+    </script>
+  </body>
 </html>
